@@ -14,6 +14,16 @@
 		mobile: '(max-width: 736px)',
 		mobilep: '(max-width: 480px)'
 	});
+	
+	$(window).scroll(function() {
+if ($(this).scrollTop() > 1){  
+    $('header').addClass("sticky");
+  }
+  else{
+    $('header').removeClass("sticky");
+  }
+});
+	
 
 	$(function() {
 
